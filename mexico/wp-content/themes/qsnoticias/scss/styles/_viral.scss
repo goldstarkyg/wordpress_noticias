@@ -1,0 +1,356 @@
+
+/**
+ * 18.0 - Viral Press
+ */
+
+.vp-glow {
+  label {
+    display: inline-block;
+  }
+}
+.vp-op-au-2 {
+  font-size: 14px;
+
+  a {
+    display: block;
+    font-size: 18px;
+  }
+}
+.vp_liked,
+.vp_list_vote_added {
+  color: #d9534f !important;
+}
+.vp-op-au-4 {
+  width: auto;
+  padding-top: 15px;
+  .vp_item_score_count {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .glyphicon {
+    &:hover {
+      color: #d9534f !important;
+    }
+  }
+}
+.vp-op-au-3 {
+  .list_dislike_count,
+  .list_like_count {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .glyphicon {
+    &:hover {
+      color: #d9534f !important;
+    }
+  }
+}
+.vp_login {
+  font-size: 15px;
+  .col-lg-5 {
+    br {
+      display: none;
+    }
+    hr {
+      margin: 20px 0 20px;
+    }
+  }
+  .col-lg-2.text-center {
+    text-transform: lowercase;
+  }
+  .forgot-password {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+.vp-glow fieldset:hover {
+  box-shadow: none;
+}
+
+.vp_post_select[multiple="multiple"] {
+  height: 250px;
+}
+
+.entry-no {
+  color: $danger-color;
+}
+
+.more_items_x legend, .more_items legend, .more_items_glow {
+  padding: 0 5px;
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: "Rammetto One", cursive;
+}
+
+.vp-clearfix-lg,
+.vp-entry {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 25px !important;
+}
+
+.box_list, .vp-entry legend {
+  display: inline-block;
+  padding: 0;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.inline_list {
+  font-size: inherit;
+}
+
+.vp-entry legend {
+  text-align: left
+}
+
+.PIN_1472118871354_embed_pin {
+  box-shadow: inset 0 0 1px #000 !important;
+}
+
+.box_list {
+  font-size: 32px
+}
+
+#TB_window {
+  max-width: 100%;
+  max-height: 98%;
+  overflow: auto;
+  margin: 0 !important;
+  @include transform(translate(-50%, -50%));
+  #TB_ajaxContent {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+#TB_title {
+  background: none !important;
+  border: 0 none !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.score_score {
+  text-align: center;
+  .entry-no-lg {
+    font-size: 30px;
+  }
+}
+
+.score_title {
+  text-align: center;
+}
+
+.score_image {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.score_desc {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#score_modal .shares,
+#TB_window .shares {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ececec;
+
+  h4 {
+    display: none
+  }
+
+  a {
+    overflow: hidden;
+
+    div {
+      max-width: 100%;
+      display: inline-block;
+      margin-bottom: 15px;
+      background-image: none;
+      color: #ffffff;
+      height: 42px !important;
+      line-height: 17px;
+      padding: 10px 10px;
+      vertical-align: middle;
+
+      &:before {
+        font-family: $icon-font-awesome;
+        padding-right: 15px;
+        font-size: 16px;
+      }
+
+      &.fb-share-lg {
+        background-color: #2d5f9a;
+        &:before {
+          content: "\f09a";
+        }
+        &:after {
+          content: "Share on Facebook";
+        }
+      }
+      &.tw-share-lg {
+        background-color: #00c3f3;
+        &:before {
+          content: "\f099";
+        }
+        &:after {
+          content: "Share on Twitter";
+        }
+      }
+    }
+  }
+}
+
+.quiz_row {
+  box-shadow: none;
+  border: 1px solid #ececec;
+}
+
+.quiz_ans_img {
+  text-align: center
+}
+
+.vp-quiz-img {
+  margin-bottom: 20px
+}
+
+.quiz_ans_list_obs {
+  width: 100%;
+  background: none;
+}
+
+.vp_wrong_ans {
+  background-color: $danger-color;
+  color: #ffffff;
+  border-color: $danger-color;
+}
+
+.vp_correct_ans {
+  background-color: $success-color;
+  color: #ffffff;
+  border-color: $success-color;
+}
+
+.vp_dash_tab td, .vp_dash_tab th {
+  border: 0 none;
+  padding: 10px !important;
+  margin: 0px !important;
+}
+
+.vp_dash_pagina .page-numbers.current, .vp_dash_pagina a.page-numbers:hover {
+  background-color: transparent;
+}
+
+.vp_dash_pagina .page-numbers {
+  padding: 0 3px;
+  margin: 0;
+  border: 2px solid #eee;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.vp-cover {
+  height: auto;
+  overflow: hidden;
+  color: #000000 !important;
+}
+
+.vp-nameplate {
+  padding: 15px 0 0 40px;
+}
+
+
+#recaptcha_area {
+  margin-bottom: 20px;
+}
+
+#recaptcha_table {
+  table-layout: auto;
+}
+
+#recaptcha_table #recaptcha_response_field {
+  height: auto;
+}
+
+.recaptchatable #recaptcha_response_field {
+  top: -15px !important;
+}
+
+.recaptcha_input_area {
+  overflow: hidden;
+}
+
+#recaptcha_privacy {
+  margin-top: -15px;
+}
+
+.vp-entry {
+  fieldset {
+    padding-top: 25px;
+    min-width: inherit !important;
+  }
+}
+
+
+/**
+* 12.3 - Post Types (viral press)
+*/
+.post-types {
+  header {
+    padding: 30px 0;
+
+    h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+  }
+  .content {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .item {
+    display: inline-block;
+    margin: 0 10px 20px;
+    padding: 20px 0 10px;
+    width: 130px;
+    text-align: center;
+    color: inherit;
+    border: 2px solid #ececec;
+
+    .icon {
+      font-size: 33px;
+      line-height: 33px;
+      color: #d7d7d7;
+    }
+    .text {
+      display: block;
+      margin-top: 15px;
+      color: inherit;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+}

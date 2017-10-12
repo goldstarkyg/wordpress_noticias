@@ -1,0 +1,11 @@
+﻿https://qsnoticias.mx/murio-hugh-hefner-fundador-de-playboy/
+--wordpress web site
+	https://qsnoticias.mx
+
+-- hosting server address
+	104.219.42.221:8443
+	user: admin
+	pass: Or302eeJb3
+
+-- client request
+      update  with jquery for mobile menu 

@@ -1,0 +1,316 @@
+/*
+skins available:
+	- black
+	- white
+*/
+
+/* the container */
+.multimedia_classic_carousel {
+	position:relative;
+	/*overflow:hidden;*/
+}
+.multimedia_classic_carousel img {
+	max-width:none;
+	max-height:none;
+}
+.multimedia_classic_carousel_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+
+.multimedia_classic_carousel .contentHolder {
+	position:relative;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:1000;
+}
+
+.myloader {
+	background:url(../skins/loader.gif);
+	width:37px;
+	height:37px;
+	position:absolute;
+	left:49%;
+	top:49%;
+	z-index:999;
+}
+
+.hideElement {
+	display:none;
+}
+
+
+/***black SKIN***/
+.multimedia_classic_carousel.black .thumbsHolderWrapper {
+	width:100%;
+	overflow:hidden;
+}
+.multimedia_classic_carousel.black .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	overflow:hidden;
+}
+.multimedia_classic_carousel.black .thumbsHolder {
+	position:absolute;
+	height:100%;
+}
+.multimedia_classic_carousel.black .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	height:100px;
+}
+
+.multimedia_classic_carousel.black .thumbsHolder_ThumbOFF img {
+	position:relative;
+}
+
+
+.multimedia_classic_carousel.black .thumbsHolder_ThumbON {
+	background:url(skins/cool/thumbActiveArrow.png) center 0px no-repeat;	
+}
+
+.multimedia_classic_carousel.black .titlez {
+	font-family:'PT Sans', sans-serif;
+	font-weight:bold;
+	line-height:1.35;
+}
+.multimedia_classic_carousel.black .descz {
+	font-family:'PT Sans', sans-serif;
+	font-weight:normal;
+	line-height:1.5;
+}
+
+.multimedia_classic_carousel.black .descz a {
+	color:#F00;
+	text-decoration:none;
+}
+
+.multimedia_classic_carousel.black .descz a:hover {
+	text-decoration: underline;
+}
+
+
+.multimedia_classic_carousel.black .iconOver {
+	position:absolute;
+	width:75px;
+	height:75px;
+	background-position:left top;
+	background-repeat:no-repeat;	
+	z-index:200;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.black .carouselLeftNav {
+	position:absolute;
+	width:64px;
+	height:68px;
+	background:url(../skins/black/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.black .carouselLeftNav:hover {
+	background:url(../skins/black/leftNavON.png) 0 0 no-repeat;
+}
+.multimedia_classic_carousel.black .carouselLeftNavDisabled {
+	background:url(../skins/black/leftNavDisabled.png) 0 0 no-repeat;
+	cursor:default;
+}
+.multimedia_classic_carousel.black .carouselLeftNavDisabled:hover {
+	background:url(../skins/black/leftNavDisabled.png) 0 0 no-repeat;
+}
+
+.multimedia_classic_carousel.black .carouselRightNav {
+	position:absolute;
+	width:68px;
+	height:68px;
+	background:url(../skins/black/rightNavOFF.png) 8px 0px no-repeat;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.black .carouselRightNav:hover {
+	background:url(../skins/black/rightNavON.png) 8px 0px no-repeat;
+}
+.multimedia_classic_carousel.black .carouselRightNavDisabled {
+	background:url(../skins/black/rightNavDisabled.png) 8px 0px no-repeat;
+	cursor:default;
+}
+.multimedia_classic_carousel.black .carouselRightNavDisabled:hover {
+	background:url(../skins/black/rightNavDisabled.png) 8px 0px no-repeat;
+}
+
+.multimedia_classic_carousel.black .bottomNav {
+	position:absolute;
+	height:35px;
+	width:0;
+	z-index:140;
+}
+
+.multimedia_classic_carousel.black .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:16px;
+	height:15px;
+	background:url(../skins/black/bottomNavOFF.png) 0 0 no-repeat;
+	padding-left:9px;
+	cursor: pointer;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;	
+}
+
+.multimedia_classic_carousel.black .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:16px;
+	height:15px;
+	padding-left:9px;
+	background:url(../skins/black/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+
+
+
+
+/***white SKIN***/
+.multimedia_classic_carousel.white .thumbsHolderWrapper {
+	width:100%;
+	overflow:hidden;
+}
+.multimedia_classic_carousel.white .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	overflow:hidden;
+}
+.multimedia_classic_carousel.white .thumbsHolder {
+	position:absolute;
+	height:100%;
+}
+.multimedia_classic_carousel.white .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	height:100px;
+}
+
+.multimedia_classic_carousel.white .thumbsHolder_ThumbOFF img {
+	position:relative;
+}
+
+
+.multimedia_classic_carousel.white .thumbsHolder_ThumbON {
+	background:url(skins/cool/thumbActiveArrow.png) center 0px no-repeat;	
+}
+
+.multimedia_classic_carousel.white .titlez {
+	font-family:'PT Sans', sans-serif;
+	font-weight:bold;
+	line-height:1.35;
+}
+.multimedia_classic_carousel.white .descz {
+	font-family:'PT Sans', sans-serif;
+	font-weight:normal;
+	line-height:1.5;
+}
+
+.multimedia_classic_carousel.white .descz a {
+	color:#F00;
+	text-decoration:none;
+}
+
+.multimedia_classic_carousel.white .descz a:hover {
+	text-decoration: underline;
+}
+
+
+.multimedia_classic_carousel.white .iconOver {
+	position:absolute;
+	width:85px;
+	height:85px;
+	background-position:left top;
+	background-repeat:no-repeat;	
+	z-index:200;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.white .carouselLeftNav {
+	position:absolute;
+	width:71px;
+	height:71px;
+	background:url(../skins/white/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.white .carouselLeftNav:hover {
+	background:url(../skins/white/leftNavON.png) 0 0 no-repeat;
+}
+.multimedia_classic_carousel.white .carouselLeftNavDisabled {
+	background:url(../skins/white/leftNavDisabled.png) 0 0 no-repeat;
+	cursor:default;
+}
+.multimedia_classic_carousel.white .carouselLeftNavDisabled:hover {
+	background:url(../skins/white/leftNavDisabled.png) 0 0 no-repeat;
+}
+
+.multimedia_classic_carousel.white .carouselRightNav {
+	position:absolute;
+	width:71px;
+	height:71px;
+	background:url(../skins/white/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.multimedia_classic_carousel.white .carouselRightNav:hover {
+	background:url(../skins/white/rightNavON.png) 0 0 no-repeat;
+}
+.multimedia_classic_carousel.white .carouselRightNavDisabled {
+	background:url(../skins/white/rightNavDisabled.png) 0 0 no-repeat;
+	cursor:default;
+}
+.multimedia_classic_carousel.white .carouselRightNavDisabled:hover {
+	background:url(../skins/white/rightNavDisabled.png) 0 0 no-repeat;
+}
+
+.multimedia_classic_carousel.white .bottomNav {
+	position:absolute;
+	height:35px;
+	width:0;
+	z-index:140;
+}
+
+.multimedia_classic_carousel.white .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:16px;
+	height:15px;
+	background:url(../skins/white/bottomNavOFF.png) 0 0 no-repeat;
+	padding-left:9px;
+	cursor: pointer;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;	
+}
+
+.multimedia_classic_carousel.white .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:16px;
+	height:15px;
+	padding-left:9px;
+	background:url(../skins/white/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+
+.pp_content_container iframe {
+	margin-bottom: 0px !important;
+}
+
+.pp_content_container video {
+	margin-bottom: 0px !important;
+}

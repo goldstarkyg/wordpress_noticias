@@ -1,0 +1,187 @@
+/**
+ * 16.0 - Pages
+ */
+
+article.page {
+  margin-bottom: 30px;
+}
+
+.page-header {
+  position: relative;
+  z-index: 5;
+  margin: 0 auto 30px;
+  padding: 20px 130px 20px;
+  text-align: center;
+  border: 1px solid #ececec;
+
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .taxonomy-description {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .badge {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -40px;
+
+    &:hover {
+      @include transform(translate(0));
+    }
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      line-height: 76px;
+
+      i {
+        font-size: 53px;
+      }
+    }
+  }
+  .entry-sub-title {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 20px 100px 20px;
+    .badge {
+      margin-top: -25px;
+      .circle {
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+        i {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $screen-xs) {
+    padding: 20px 20px 20px;
+    .badge {
+      top: inherit;
+      left: inherit;
+      right: 30px;
+      bottom: -25px;
+      margin-top: 0;
+    }
+  }
+}
+
+.archive.tax-reaction {
+  .page-header {
+    background-image: url('../images/reaction_bg.png');
+  }
+}
+
+.archive.category,
+.archive.tag {
+  .page-header {
+    background-image: url('../images/category_bg.png');
+  }
+}
+
+
+/**
+ * 16.2 - 404 page
+ */
+.error404 {
+  .page-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+section.error-404 {
+  position: relative;
+  width: 1040px;
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .page-header {
+    margin: 55px 0 50px;
+    padding: 0;
+    width: 100%;
+    border: 0 none;
+
+    .page-title {
+      text-align: left;
+      font-size: 120px;
+      line-height: 120px;
+      text-transform: none;
+
+    }
+  }
+  .text {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2a2b35;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+  }
+  .back {
+    display: inline-block;
+    padding: 15px 28px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f4f7f6;
+
+    .icon {
+      display: inline-block;
+      margin-right: 10px;
+      @include transition(transform 0.2s ease-out);
+    }
+
+    &:hover {
+      color: $primary-color;
+
+      .icon {
+        @include transform(translateX(-10px));
+      }
+    }
+  }
+  @media screen and (max-width: $screen-md-min) {
+    .page-header .page-title {
+      font-size: 70px!important;
+      line-height: 70px;
+    }
+    .img-col {
+      margin: 40px 0;
+    }
+  }
+}
+
+/**
+ * 16.3 - Contact Page
+ */
+.boombox-contact-form-wrap {
+  padding-top: 15px;
+}
+.boombox-contact-form-wrap .bb-txt-msg {
+  text-align: left;
+}
+//.boombox-contact-form-message {
+//  display: block;
+//  margin: 0 0 15px;
+//  text-align: center;
+//  font-style: italic;
+//}

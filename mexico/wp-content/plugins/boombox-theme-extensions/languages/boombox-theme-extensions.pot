@@ -1,0 +1,444 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BoomBox Theme Extensions\n"
+"POT-Creation-Date: 2017-04-28 16:02+0400\n"
+"PO-Revision-Date: 2017-04-28 16:02+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: boombox-theme-extensions.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: boombox-gif-to-video/class-gif-to-video.php:200
+#, php-format
+msgid "Error converting to %s"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:281
+msgid "Error inserting attachment"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:293
+msgid "Invalid Configuration"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:326
+msgid "Invalid storage"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:493
+msgid "Your browser does not support the video tag."
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-post-reactions-metabox.php:56
+#: boombox-reactions/register-reactions.php:19
+msgid "Reactions"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-post-reactions-metabox.php:107
+msgid "This post has no reaction."
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:79
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:155
+msgid "Disable Vote"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:84
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:164
+msgid "Reaction Icon"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:93
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:173
+msgid "Choose reaction icon"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:106
+msgid "Color Scheme"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:192
+msgid "Icon Background Color"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:322
+msgid "Default"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:323
+msgid "Custom"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:17
+msgctxt "Taxonomy General Name"
+msgid "Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:18
+msgctxt "Taxonomy Singular Name"
+msgid "Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:20
+msgid "All Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:21
+msgid "Parent Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:22
+msgid "Parent Reaction:"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:23
+msgid "New Reaction Name"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:24
+msgid "Add New Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:25
+msgid "Edit Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:26
+msgid "Update Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:27
+msgid "View Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:28
+msgid "Separate Reactions with commas"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:29
+msgid "Add or Remove Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:30
+msgid "Choose from the most used"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:31
+msgid "Popular Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:32
+msgid "Search Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:33
+msgid "Not Found"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:34
+msgid "No Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:35
+msgid "Reactions list"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:36
+msgid "Reactions list navigation"
+msgstr ""
+
+#: boombox-shortcodes/captcha.php:77
+msgid "Error in imagettfbbox function"
+msgstr ""
+
+#: boombox-shortcodes/captcha.php:80
+msgid "Error in imagettftext function"
+msgstr ""
+
+#: boombox-shortcodes/components.php:118
+#: boombox-social/class-boombox-social.php:152
+msgid "Title"
+msgstr ""
+
+#: boombox-shortcodes/components.php:300
+msgid "Tooltip text"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:30
+msgid "Your message successfully submitted!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:31
+msgid "Please fill all required fields!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:32
+msgid "Something went wrong, please try again!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:47
+msgid "Your Message"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:48
+msgid "Submit Your Message"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:74
+#: boombox-shortcodes/contact-form.php:186
+msgid "Name"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:77
+#: boombox-shortcodes/contact-form.php:187
+#: boombox-social/class-boombox-social.php:254
+msgid "Email"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:95
+msgid "Enter captcha"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:140
+msgid "Please enter the name."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:145
+msgid "Please enter valid email address."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:150
+msgid "Please fill the comment."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:161
+#: boombox-shortcodes/contact-form.php:171
+msgid "Invalid Captcha! Please, try again."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:180
+msgid "Contact Form"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:188
+msgid "Message"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:70
+msgid "You have entered an invalid e-mail address."
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:126
+msgid "Boombox Social"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:128
+msgid "For reordering social items, please, drag and drop icons"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:186
+msgid "Link"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:187
+msgid "Email Address"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:191
+msgid "Facebook"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:198
+msgid "Google+"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:205
+msgid "Instagram"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:212
+msgid "Linkedin"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:219
+msgid "Pinterest"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:226
+msgid "Tumblr"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:233
+msgid "Twitter"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:240
+msgid "Vimeo"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:247
+msgid "Youtube"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:261
+msgid "Behance"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:268
+msgid "CodePen"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:275
+msgid "Delicious"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:282
+msgid "DeviantArt"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:289
+msgid "Digg"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:296
+msgid "Dribbble"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:303
+msgid "Flickr"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:310
+msgid "Foursquare"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:317
+msgid "GitHub"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:324
+msgid "JSFiddle"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:331
+msgid "Last.fm"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:338
+msgid "Reddit"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:345
+msgid "SlideShare"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:352
+#: boombox-social/class-boombox-social.php:422
+msgid "Snapchat"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:359
+msgid "Stack Overflow"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:366
+msgid "StumbleUpon"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:373
+msgid "Vine"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:380
+msgid "XING"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:387
+msgid "Yelp"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:394
+msgid "Vkontakte"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:401
+msgid "Odnoclassniki"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:408
+msgid "Twitch"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:415
+msgid "Website Link"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:429
+msgid "Telegram"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:431
+msgid "http://telegram.me/TELEGRAM_USERNAME"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:436
+msgid "RSS"
+msgstr ""
+
+#: boombox-social/functions.php:47
+msgid "No social links are set."
+msgstr ""
+
+#: boombox-social/widget.php:22
+msgid "Boombox Social Widget"
+msgstr ""
+
+#: boombox-social/widget.php:23
+msgid "A Social Widget"
+msgstr ""
+
+#: boombox-social/widget.php:63
+msgid "Connect With Us"
+msgstr ""
+
+#: boombox-social/widget.php:67
+msgid "Title:"
+msgstr ""
+
+#: boombox-social/widget.php:74
+msgid "Exclude"
+msgstr ""
+
+#: boombox-social/widget.php:75
+msgid "(eg. tumblr, twitter, facebook) :"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BoomBox Theme Extensions"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Add custom functionality to BoomBox theme ( social icons, social widget, "
+"shortcodes, custom post types, etc. )"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Px-Lab"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://px-lab.com"
+msgstr ""

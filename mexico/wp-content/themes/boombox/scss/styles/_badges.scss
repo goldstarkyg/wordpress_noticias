@@ -1,0 +1,232 @@
+/**
+ * 11.0 - Badges
+ */
+
+.badge {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  .circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    vertical-align: middle;
+    @include border-radius(50%);
+    @include box-shadow(1px, 2px, 2px, rgba(0, 0, 0, 0.18));
+
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+  .text {
+    display: none;
+    font-size: 8px;
+    line-height: 9px;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    @include transform(translate(0px, -3px));
+  }
+  .circle {
+    i {
+      font-size: 26px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.badge-list {
+  position: relative;
+  text-align: center;
+
+  .badge {
+    margin: 0 3px 5px;
+    vertical-align: top;
+  }
+}
+
+.badge-face-text {
+  .badge {
+    .text {
+      display: none
+    }
+  }
+  .top-badge-list .badge,
+  .header .badge {
+    .circle {
+      margin-bottom: 5px
+    }
+    .text {
+      display: block;
+    }
+  }
+  .more-menu {
+    .circle {
+      margin-bottom: 0
+    }
+    .badge {
+      .text {
+        display: none
+      }
+    }
+  }
+}
+
+.badge-text,
+.badge-text-angle,
+.no-svg .badge-face,
+.no-svg .badge-face-text {
+  .badge {
+    text-align: center;
+    .circle {
+      margin-bottom: 0 !important;
+
+      img, i {
+        display: none
+      }
+    }
+    .text {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: 99.9%;
+      min-width: 100%;
+      font-size: 11px;
+      line-height: 40px;
+    }
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    .page-header {
+      .badge {
+        .text {
+          font-size: 19px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    .page-header {
+      .badge {
+        .text {
+          line-height: 48px;
+        }
+      }
+    }
+  }
+}
+
+.badge-text-angle {
+  .badge {
+    .text {
+      @include transform(rotate(-30deg));
+    }
+  }
+}
+
+.badge-text,
+.badge-text-angle,
+.no-svg .badge-face,
+.no-svg .badge-face-text {
+  .badge {
+    &.trending {
+      .circle {
+        i {
+          display: inline-block;
+        }
+      }
+      .text {
+        display: none
+      }
+    }
+  }
+}
+
+
+.no-svg,
+.badge-text,
+.badge-text-angle {
+  .header {
+    .large {
+      .badge-list {
+        .badge {
+          .text {
+            font-size: 14px;
+            line-height: 52px;
+          }
+        }
+      }
+    }
+  }
+  .top-badge-list {
+    .badge-list {
+      .badge {
+        .text {
+          font-size: 14px;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  .large {
+    .badge-list {
+      .badge {
+
+        .circle {
+          width: 52px;
+          height: 52px;
+          line-height: 48px;
+        }
+        .text {
+          font-size: 11px;
+          line-height: 13px;
+        }
+      }
+      .circle {
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+/**
+ * 11.1 - Top Badges
+ */
+
+.top-badge-list {
+  padding: 0 0 30px;
+  text-align: center;
+
+  .badge-list {
+    .badge {
+      margin: 0 0.6% 5px;
+
+      .circle {
+        width: 52px;
+        height: 52px;
+        line-height: 48px;
+      }
+      .text {
+        font-size: 11px;
+        line-height: 14px;
+      }
+    }
+    .circle {
+      i {
+        font-size: 32px;
+      }
+    }
+  }
+}

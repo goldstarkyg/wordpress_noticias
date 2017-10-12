@@ -1,0 +1,441 @@
+/*textWhiteBgBlack*/
+.vc_textWhiteBgBlack_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#FFF;
+	background:#000;
+	padding:5px 6px;
+	margin:0;
+}
+.vc_textWhiteBgBlack_small a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgBlack_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textWhiteBgBlack_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#FFF;
+	background:#000;
+	padding:6px 7px;
+	margin:0;
+}
+.vc_textWhiteBgBlack_medium a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgBlack_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textWhiteBgBlack_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#FFF;
+	background:#000;
+	padding:7px 10px;
+	margin:0;
+}
+.vc_textWhiteBgBlack_large a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgBlack_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+/*textBlackBgWhite*/
+.vc_textBlackBgWhite_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#000;
+	background:#FFF;
+	padding:5px 6px;
+	margin:0;
+}
+.vc_textBlackBgWhite_small a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgWhite_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlackBgWhite_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#000;
+	background:#FFF;
+	padding:6px 7px;
+	margin:0;
+}
+.vc_textBlackBgWhite_medium a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgWhite_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlackBgWhite_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#000;
+	background:#FFF;
+	padding:7px 10px;
+	margin:0;
+}
+.vc_textBlackBgWhite_large a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgWhite_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+/*textRedBgWhite*/
+.vc_textRedBgWhite_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#F00;
+	background:#FFF;
+	padding:5px 6px;
+	margin:0;
+}
+.vc_textRedBgWhite_small a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgWhite_small a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textRedBgWhite_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#F00;
+	background:#FFF;
+	padding:6px 7px;
+	margin:0;
+}
+.vc_textRedBgWhite_medium a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgWhite_medium a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textRedBgWhite_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#F00;
+	background:#FFF;
+	padding:7px 10px;
+	margin:0;
+}
+.vc_textRedBgWhite_large a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgWhite_large a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+/*textBlueBgWhite*/
+.vc_textBlueBgWhite_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#00F;
+	background:#FFF;
+	padding:5px 6px;
+	margin:0;
+}
+.vc_textBlueBgWhite_small a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgWhite_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlueBgWhite_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#00F;
+	background:#FFF;
+	padding:6px 7px;
+	margin:0;
+}
+.vc_textBlueBgWhite_medium a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgWhite_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+
+.vc_textBlueBgWhite_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#00F;
+	background:#FFF;
+	padding:7px 10px;
+	margin:0;
+}
+.vc_textBlueBgWhite_large a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgWhite_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+/*textWhiteBgTransparent*/
+.vc_textWhiteBgTransparent_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#FFF;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textWhiteBgTransparent_small a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgTransparent_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textWhiteBgTransparent_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#FFF;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textWhiteBgTransparent_medium a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgTransparent_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textWhiteBgTransparent_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#FFF;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textWhiteBgTransparent_large a {
+	color:#FFF;
+	text-decoration:underline;
+}
+.vc_textWhiteBgTransparent_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+/*textBlackBgTransparent*/
+.vc_textBlackBgTransparent_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#000;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlackBgTransparent_small a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgTransparent_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlackBgTransparent_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#000;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlackBgTransparent_medium a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgTransparent_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlackBgTransparent_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#000;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlackBgTransparent_large a {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textBlackBgTransparent_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+/*textRedBgTransparent*/
+.vc_textRedBgTransparent_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#F00;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textRedBgTransparent_small a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgTransparent_small a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textRedBgTransparent_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#F00;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textRedBgTransparent_medium a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgTransparent_medium a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+.vc_textRedBgTransparent_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#F00;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textRedBgTransparent_large a {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textRedBgTransparent_large a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+/*textBlueBgTransparent*/
+.vc_textBlueBgTransparent_small {
+	font-family: Arial;
+	font-size:12px;
+	line-height:12px;
+	font-weight:bold;
+	color:#00F;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlueBgTransparent_small a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgTransparent_small a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlueBgTransparent_medium {
+	font-family: Arial;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#00F;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlueBgTransparent_medium a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgTransparent_medium a:hover {
+	color:#F00;
+	text-decoration:underline;
+}
+.vc_textBlueBgTransparent_large {
+	font-family: Arial;
+	font-size:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#00F;
+	background:none;
+	padding:0;
+	margin:0;
+}
+.vc_textBlueBgTransparent_large a {
+	color:#00F;
+	text-decoration:underline;
+}
+.vc_textBlueBgTransparent_large a:hover {
+	color:#F00;
+	text-decoration:underline;
+}

@@ -1,0 +1,835 @@
+@import "compass";
+$start-width: 770px;
+$small-width: 570px;
+$main-background : #039E79;
+$main-border : #43494B;
+$main-icon-size : 20px;
+$main-nav-font : 10px;
+$main-nav-color : #fff;
+$main-nav-hover-color : #fff;
+$main-nav-hover-bgcolor : #538477;
+
+$mobi-side-bg: #1d2127;
+$mobi-side-width: 100%;
+$submenu-bg : #191c21;
+$submenu-current-bg : #21262d;
+
+$content-color: #ffffff;
+
+body.mobi-container{
+	margin:0px;
+	padding: 0px;
+}
+body .mobi-clear{
+	clear: both;
+}
+
+input:-moz-placeholder {
+	color: green;
+}
+
+.mobi-nav-wrapper, .mobi-nav-wrap{
+	display:none;
+}
+.mobi-nav{
+	display:none;
+	&, ul, ul li{
+		margin:0px;
+		padding:0px;
+		@include box-sizing("border-box");
+	}
+}
+.mobi-nav-wrap{
+	position: relative;
+	&.mobi-nav-wrap-image{
+		.mobi-target-inner{
+			@include background-size(cover);
+			background-position: center center;
+			.mobi-full-inner .mobi-menu {
+				li, .mobiwp-submenu{
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+// @media screen and (max-width: $start-width) {
+	.mobi-nav-wrapper{
+		display:block;
+	}
+	//logo added on version 2.0
+	.mobiwp-logo{
+		background: transparent;
+		border: 0px;
+		@include box-sizing( border-box );
+		display: block;
+		clear: both;
+		padding: 20px 20px 15px;
+		text-align: center;
+		a, img{
+			border: 0px;
+			padding: 0px;
+			margin: 0px;
+			@include inline-block;
+			&:before, &:after{
+				display: none;
+			}
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+	.mobiwp-logo-left{
+		text-align: left;
+	}
+	.mobiwp-logo-right{
+		text-align: right;
+	}
+	.mobi-nav{
+		display: block;
+		width: 100%;
+		position: fixed;
+		left:0px;
+		background: $main-background;
+		border-top:1px solid $main-border;
+		z-index: 9999999;
+		ul.mobi-main-nav{
+			list-style-type: none;
+			li{
+				float:left;
+				width: 25%;
+				text-align: center;
+				height: 100%;
+				display: block;
+				&.mobi-opener-position-right{
+					float: right;
+				}
+				a{
+					display: block;
+					padding: 7px;
+					color: $main-nav-color;
+					text-decoration: none;
+					font-size: $main-nav-font;
+					line-height: $main-nav-font + 5;
+					text-transform: uppercase;
+					line-height: 1em;
+
+					.mobi-main-icon{
+						font-size: $main-icon-size;
+						display: block;
+						margin-bottom: 1px;
+					}
+					&.mobi-close-menu{
+						display: none;
+					}
+					&:hover{
+						color: $main-nav-hover-color;
+						background: $main-nav-hover-bgcolor;
+					}
+				}
+				span{
+					line-height: 1em;
+					font-size: 8px;
+				}
+			}
+		}
+		&.mobiwp-disable-popup{
+			ul.mobi-main-nav{
+				li{
+					width: 33.3%;
+					&:first-child, &:last-child{
+						width: 33.4%;
+					}
+				}
+			}
+		}
+		.mobiwp-closer{
+			display: none;
+		}
+		&.mobi-nav-bottom{
+			bottom:0px;
+		}
+		&.mobi-nav-top{
+			top:0px;
+			border-top-width: 0px;
+			border-bottom: 1px solid $main-border;
+		}
+
+		&.mobiwp-scroll-anim{
+			@include transition(transform 0.2s);
+			@media screen and ( max-width: $start-width ){
+				&.mobi-nav-bottom{
+					&.mobiwp-scrolldown{
+						@include transform( translateY(0%) );
+					}
+					&.mobiwp-scrollup{
+						@include transform( translateY(100%) );
+					}
+				}
+				&.mobi-nav-top{
+					&.mobiwp-scrolldown{
+						@include transform( translateY(0%) );
+					}
+					&.mobiwp-scrollup{
+						@include transform( translateY(-100%) );
+					}
+				}
+			}
+		}
+	}
+	.mobi-container{
+		position: relative;
+	}
+	.mobi-nav-target{
+		background: $mobi-side-bg;
+		position: fixed;
+		top: 0px;
+		left:0px;
+		height: 100%;
+		width: $mobi-side-width;
+		color: $content-color;
+		z-index: 999999;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		visibility: hidden;
+		// display: none;
+
+
+  		//effects
+  		&.mobi-effect-fade{
+  			@include opacity(0);
+			@include transition-property(all);
+	  		@include transition-duration(0.5s);
+  		}
+  		&.mobi-effect-scale{
+  			@include opacity(0);
+  			@include transform( scale(0.9) );
+			@include transition(transform 0.2s, opacity 0.2s, visibility 0s 0.2s);
+  		}
+  		&.mobi-effect-ginie{
+  			@include transform( translateY(60%) scale(0) );
+  			@include transition(transform 0.4s, visibility 0s 0.4s);
+  		}
+  		&.mobi-effect-slide-down{
+  			@include transform( translateY(-100%) );
+  			@include transition(transform 0.4s ease-in-out, visibility 0s 0.4s);
+  		}
+  		&.mobi-effect-corner{
+  			@include opacity(0);
+  			@include transform( translateY(50px) translateX(50px) );
+  			@include transition(opacity 0.5s, transform 0.5s, visibility 0s 0.5s);
+  		}
+
+  		.mobi-target-inner{
+  			display: block;
+			position: relative;
+			height: 100%;
+  		}
+
+  		.mobi-nav-close{
+  			display: block;
+  			position: absolute;
+  			top: 0px;
+  			right: 0px;
+  			margin: 12px;
+  			height: 25px;
+  			width: 25px;
+  			text-align: right;
+  			color: #fff;
+  			text-decoration: none;
+  			border: 0px;
+  			z-index: 1;
+  			i{
+  				font-size: 38px;
+				line-height: 38px;
+				position: relative;
+				height: 25px;
+  				width: 25px;
+  				display: block;
+				&:before{
+					position: absolute;
+					top: -4px;
+					right: 5px;
+					display: block;
+				}
+  			}
+  			&:hover{
+  				cursor: pointer;
+  			}
+  		}
+  		.mobiwp-full-top{
+  			position: relative;
+  			// -webkit-tap-highlight-color: transparent;
+  			.mobiwp-search-container{
+  				display: block;
+  				width: 100%;
+  				padding: 12px 20px 12px 20px;
+  				@include box-sizing(border-box);
+  				form{
+  					position: relative;
+  					width: 100%;
+  					#s{
+  						width: 100%;
+  						padding:5px 15px 5px 30px;
+  						height: 30px;
+  						@include border-radius(0px);
+  						border: 0px;
+  						background: #ffffff;
+						color: #111;
+  						@include opacity(0.9);
+  						@include box-sizing(border-box);
+  					}
+  					.mobi-searchsubmit{
+  						position: absolute;
+  						top: 0px;
+  						left: 0px;
+  						height: 25px;
+  						width: 30px;
+  						z-index: 99;
+  						font-size: 21px;
+						text-align: center;
+						line-height: 31px;
+						@include opacity(0.5);
+						text-decoration: none;
+  					}
+  				}
+  			}
+  		}
+  		.mobi-full-inner{
+  			display: block;
+  			padding: 0px;
+  			margin: 0px;
+  			clear: both;
+  			&.mobi-full-inner-nosearch{
+  				padding-top: 20px;
+  			}
+  			.mobiwp-nav-title{
+  				position: relative;
+  				display: block;
+  				clear: both;
+  				@include box-sizing( border-box );
+  				.mobiwp-nav-title-text{
+  					text-transform: uppercase;
+					padding: 5px 15px;
+					font-size: 12px;
+					font-size: 1.2rem;
+					font-weight: bold;
+					// @include opacity(0.65);
+					color: #abb4be;
+  				}
+  			}
+  			.mobi-menu{
+  				&,li{
+  					list-style-type: none;
+  					margin: 0px;
+  					padding: 0px;
+  					a{
+  						// line-height: 1em;
+  						font-size: 13px;
+						font-size: 1.3rem;
+  						color: #fff;
+  						display: block;
+  						position: relative;
+  						padding: 12px 20px;
+  						outline: none !important;
+  						text-decoration: none !important;
+  						color: #abb4be;
+  						@include border-radius(0px);
+  						i{
+  							font-size: 18px;
+							font-size: 1.8rem;
+							// width: 1.1em;
+							margin-right: 0.25em;
+							text-align: center;
+							vertical-align: middle;
+  							@include inline-block;
+  							min-width: 23px;
+  						}
+  						span{
+  							// padding: 5px 0px;
+  							text-align: left;
+  						}
+  						&.mobinav-current-menu, &:hover{
+  							background: $submenu-current-bg;
+  						}
+  					}
+  					.mobiwp-submenu{
+  						display: none;
+  						width: 100%;
+  						background : $submenu-bg;
+  						margin: 0px;
+  						padding: 0px;
+  					}
+  				}
+  				li{
+  					&.mobinav-parent{
+  						position: relative;
+  						a.mobiwp-has-children{
+  							&:after{
+  								font-family: "ionicons";
+								content: '\f151';
+								font-size: 16px;
+								font-size: 1.6rem;
+								color: #abb4be;
+								position: absolute;
+								right: 0;
+								vertical-align: middle;
+								padding: 0px 25px;
+  							}
+  						}
+  						&.mobinav-parent-open{
+  							& > a.mobiwp-has-children{
+  								&:after{
+  									content: '\f155';
+  								}
+  							}
+  						}
+  					}
+  					.mobiwp-child{
+  						li{
+  							a{
+  								padding: 9px 15px 9px 45px;
+  							}
+  							.mobiwp-grandchild{
+  								li{
+  									a{
+  										padding: 9px 15px 9px 74px;
+  									}
+  									.mobiwp-grandchildren{
+  										li{
+  											a{
+  												padding: 9px 15px 9px 108px;
+  											}
+  										}
+  									}
+  								}
+  							}
+  						}
+  					}
+  				}
+  			}
+  			.mobi-socials{
+  				display: block;
+  				clear: both;
+  				padding: 5px 0px 60px 12px;
+  				ul{
+  					&, li{
+  						list-style-type: none;
+  						margin: 0px;
+  						padding: 0px;
+  						a{
+  							line-height: 1em;
+  							@include inline-block;
+							@include border-radius(2px);
+							color: #fff;
+							width: 28px;
+							height: 28px;
+							text-align: center;
+							border: 0px;
+							i{
+								color: #fff;
+								font-size: 14px;
+								line-height: 27px;
+							}
+  							&, i{
+								@include transition-property(all);
+								@include transition-duration(0.16s);
+								@include transition-timing-function(ease-in-out);
+							}
+							&:hover{
+								@include transform(scale(1.25));
+							}
+  						}
+  					}
+  					li{
+  						float: left;
+  						padding: 5px;
+  					}
+  				}
+
+  				.mobiwp-facebook{
+					background: #3b5998;
+				}
+				.mobiwp-twitter{
+					background: #00aced;
+				}
+				.mobiwp-googleplus{
+					background: #D14836;
+				}
+				.mobiwp-youtube{
+					background: #CD332D;
+				}
+				.mobiwp-linkedin{
+					background: #007FB1;
+				}
+				.mobiwp-instagram{
+					background: #3F729B;
+				}
+				.mobiwp-pinterest{
+					background: #CB2027;
+				}
+				.mobiwp-quora{
+					background: #a82400;
+				}
+				.mobiwp-flickr{
+					background: #ff0084;
+				}
+				.mobiwp-tumblr{
+					background: #2C4762;
+				}
+				.mobiwp-vimeo{
+					background: #44BBFF;
+				}
+				.mobiwp-dribbble{
+					background: #EA4C89;
+				}
+				.mobiwp-stumbleupon{
+					background: #EB4924;
+				}
+				.mobiwp-spotify{
+					background: #80B719;
+				}
+				.mobiwp-digg{
+					background: #14589E;
+				}
+				.mobiwp-behance{
+					background: #1769FF;
+				}
+				.mobiwp-reddit{
+					background: #FF4500;
+				}
+				.mobiwp-picasa{
+					background: #4B5D5F;
+				}
+				.mobiwp-fivehundredpx{
+					background: #444444;
+				}
+				.mobiwp-wordpress{
+					background: #21759B;
+				}
+				.mobiwp-deviantart{
+					background: #4B5D50;
+				}
+				.mobiwp-delicious{
+					background: #3274D1;
+				}
+				.mobiwp-camera{
+					background: #A62C39;
+				}
+				.mobiwp-picture{
+					background: #5A471B;
+				}
+  			}
+  		}
+	}
+	//container effect
+	.mobi-open{
+		overflow:hidden;
+		.mobi-nav-target{
+			// display: block;
+				visibility: visible;
+				@include opacity(1);
+			&.mobi-effect-fade{
+
+			}
+			&.mobi-effect-scale{
+				@include transform( scale(1) );
+				@include transition(transform 0.4s, opacity 0.4s);
+	  		}
+	  		&.mobi-effect-ginie{
+				@include transform( translateY(0%) scale(1) );
+				@include transition(transform 0.4s);
+	  		}
+	  		&.mobi-effect-slide-down{
+	  			@include transform( translateY(0%) );
+	  			@include transition(transform 0.4s ease-in-out);
+	  		}
+	  		&.mobi-effect-corner{
+	  			@include transform( translateY(0%) );
+	  			@include transition(opacity 0.5s, transform 0.5s);
+	  		}
+		}
+	}
+
+// }
+
+//Tablet version
+@media screen and ( min-width: $small-width ) and ( max-width: $start-width ) {
+	.mobi-nav-target{
+		.mobi-target-inner{
+			padding: 10px 0px;
+			.mobiwp-nav-title{
+				.mobiwp-nav-title-text{
+					padding-left: 25px;
+					padding-right: 25px;
+				}
+			}
+			ul.mobi-menu{
+				li{
+					a{
+					    padding: 12px 25px;
+					}
+				}
+			}
+		}
+		.mobiwp-full-top{
+			.mobiwp-search-container{
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+		}
+		.mobi-full-inner{
+			.mobi-socials{
+				padding: 5px 10px 60px 20px;
+			}
+		}
+	}
+}
+
+//Desktop Version
+@media screen and ( min-width: $start-width ){
+// screen
+//   and ( min-device-width: $start-width - 50 )
+//   and (orientation: landscape)
+
+  	.mobi-nav{
+  		&.mobiwp-scroll-anim-desktop{
+  			@include transition(transform 0.35s);
+			&.mobi-nav-desktop-bottom-center{
+				&.mobiwp-scrolldown{
+					@include transform( translateY(0%) );
+				}
+				&.mobiwp-scrollup{
+					@include transform( translateY(100%) );
+				}
+			}
+			&.mobi-nav-desktop-top-center{
+				&.mobiwp-scrolldown{
+					@include transform( translateY(0%) );
+				}
+				&.mobiwp-scrollup{
+					@include transform( translateY(-100%) );
+				}
+			}
+			&.mobi-nav-desktop-right-center,
+			&.mobi-nav-desktop-top-right,
+			&.mobi-nav-desktop-bottom-right{
+				&.mobiwp-scrolldown{
+					@include transform( translateX(0%) );
+				}
+				&.mobiwp-scrollup{
+					@include transform( translateX(120%) );
+				}
+			}
+			&.mobi-nav-desktop-bottom-left,
+			&.mobi-nav-desktop-top-left,
+			&.mobi-nav-desktop-left-center{
+				&.mobiwp-scrolldown{
+					@include transform( translateX(0%) );
+				}
+				&.mobiwp-scrollup{
+					@include transform( translateX(-120%) );
+				}
+			}
+  		}
+  	}
+	.mobi-nav-wrapper{
+		.mobiwp-navigation{
+			width: 350px;
+			left: 50%;
+			margin-left: -175px;
+			@include border-radius( 5px 5px 0px 0px );
+			overflow: hidden;
+			border: 1px solid #43494b;
+
+			.mobiwp-col-2.mobi-main-nav{
+				li{
+					width: 33.3%;
+				}
+			}
+
+			&.mobi-nav-desktop-hidden{
+				display: none !important;
+			}
+
+			&.mobi-nav-desktop-right-center,
+			&.mobi-nav-desktop-left-center,
+			&.mobi-nav-desktop-top-right,
+			&.mobi-nav-desktop-top-left,
+			&.mobi-nav-desktop-bottom-left,
+			&.mobi-nav-desktop-bottom-right{
+				bottom: auto;
+				height: auto;
+				width: auto;
+				width: 60px;
+				margin: 0px;
+				top: 50%;
+				margin-top: -120px;
+				ul{
+					li{
+						float: none;
+						width: auto !important;
+						a{
+							padding: 10px 6px;
+						}
+					}
+				}
+			}
+
+			&.mobi-nav-desktop-right-center{
+				right: 0px;
+				left: auto;
+				@include border-radius( 5px 0px 0px 5px );
+				border-right: 0px;
+
+
+			}
+			&.mobi-nav-desktop-left-center{
+				right: auto;
+				left: 0px;
+				@include border-radius( 0px 5px 5px 0px );
+				border-left: 0px;
+			}
+
+			&.mobi-nav-desktop-top-center{
+				height: auto;
+				top: 0px;
+				bottom: auto;
+				@include border-radius( 0px 0px 5px 5px );
+				border-top: 0px;
+			}
+			&.mobi-nav-desktop-bottom-center{
+				border-bottom: 0px;
+				bottom: 0px;
+				top: auto;
+			}
+
+			&.mobi-nav-desktop-top-right,
+			&.mobi-nav-desktop-top-left,
+			&.mobi-nav-desktop-bottom-left,
+			&.mobi-nav-desktop-bottom-right{
+				top: 10px;
+				right: 10px;
+				margin: 0px;
+				left: auto;
+				bottom: auto;
+				@include border-radius( 5px );
+				// border-top: 0px;
+			}
+			&.mobi-nav-desktop-top-left{
+				left: 10px;
+				right: auto;
+			}
+			&.mobi-nav-desktop-bottom-right{
+				left: auto;
+				right: 10px;
+				top: auto;
+				bottom: 10px;
+			}
+			&.mobi-nav-desktop-bottom-left{
+				left: 10px;
+				right: auto;
+				top: auto;
+				bottom: 10px;
+			}
+
+		}
+	}
+	.mobi-nav-target{
+		// padding-bottom: 0px !important;
+		background: rgba( 0,0,0, 0.25 ) !important;
+		padding: 75px 0px !important;
+		top: 0px !important;
+		.mobi-target-inner{
+			width: 500px;
+			margin: 0 auto;
+			background: #1d2127;
+			padding: 10px 0px;
+			@include border-radius( 3px );
+			@include box-shadow( 1px 1px 4px rgba( 0,0,0, 0.25 ) );
+
+			ul.mobi-menu{
+				li{
+					a{
+						padding: 12px 25px;
+					}
+				}
+			}
+			.mobiwp-nav-title .mobiwp-nav-title-text,
+			.mobiwp-full-top .mobiwp-search-container{
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+		}
+		.mobi-full-inner{
+			.mobi-socials{
+				padding-bottom: 20px !important;
+				padding-left: 20px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+
+/** initial setup for NANO SCROLLER **/
+.nano {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+.nano > .nano-content {
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+}
+.nano > .nano-content:focus {
+  outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+  display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block;
+}
+.nano > .nano-pane {
+  background : rgba(0,0,0,.25);
+  position   : absolute;
+  width      : 10px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : .01;
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+  border-radius         : 5px;
+}
+.nano > .nano-pane > .nano-slider {
+  background: #444;
+  background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : 0.99;
+}
+
+//print
+@media print {
+  #mobi-nav-wrap-target, .mobi-nav-wrap, .mobi-nav-wrapper{
+	  display: none !important;
+  }
+}

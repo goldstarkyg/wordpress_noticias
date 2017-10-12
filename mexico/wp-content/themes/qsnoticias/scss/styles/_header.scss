@@ -1,0 +1,238 @@
+/**
+ * 10.0 - Header
+ */
+
+.header {
+  position: relative;
+  z-index: 50;
+
+  .container {
+    width: 100%;
+    > * {
+      position: relative;
+      top: 50%;
+      opacity: 0;
+    }
+  }
+
+  &.stuck {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+
+  .top,
+  .bottom {
+    position: relative;
+    padding: 12px 0;
+    background-color: #ffffff;
+
+    &.stuck {
+      position: fixed;
+      top: 0;
+      z-index: 20;
+    }
+  }
+  .top {
+    .container {
+      position: relative;
+      z-index: 3;
+
+      .badge-list,
+      .account-box {
+        text-align: right;
+      }
+    }
+  }
+  .bottom {
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .top,
+  .bottom {
+    &.boxed {
+      .container {
+        width: 1200px;
+      }
+    }
+    &.narrow {
+      padding: 4px 0;
+
+      .branding {
+        img {
+          max-height: 44px;
+          width: auto;
+        }
+      }
+      .account-box {
+        .create-post {
+          margin-bottom: 2px;
+          padding: 5px 18px 4px;
+        }
+      }
+      .user-box {
+        img {
+          width: 28px;
+          margin: 5px 0 4px;
+        }
+      }
+    }
+    &.large {
+      .container {
+        min-height: 50px;
+      }
+    }
+    &.menu-left {
+      .navigation-box {
+        text-align: left;
+      }
+    }
+    &.menu-middle {
+      .navigation-box {
+        text-align: center;
+      }
+    }
+    &.menu-right {
+      .navigation-box {
+        text-align: right;
+      }
+    }
+  }
+
+  &.top-bg {
+    .bottom {
+      padding-top: 25px;
+      padding-top: 1.5vw;
+    }
+    .top {
+      padding-bottom: 5px;
+
+      .pattern {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 99%;
+        overflow: hidden;
+        z-index: 1;
+        svg {
+          position: relative;
+          float: left;
+          width: 100.6%;
+          left: -0.3%;
+          right: -0.3%;
+
+          > * {
+            width: 100%
+          }
+        }
+      }
+      &.narrow {
+        height: auto;
+      }
+    }
+
+    &.no-bottom {
+      padding-bottom: 25px;
+      padding-bottom: 1.5vw;
+    }
+  }
+  &.bottom-bg {
+    padding-bottom: 25px;
+    padding-bottom: 1.5vw;
+
+    .bottom {
+      padding-bottom: 5px;
+
+      .pattern {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 99%;
+        overflow: hidden;
+        z-index: 0;
+        svg {
+          position: relative;
+          float: left;
+          width: 100.6%;
+          left: -0.3%;
+          right: -0.3%;
+          > * {
+            width: 100%
+          }
+        }
+      }
+      &.narrow {
+        height: auto;
+      }
+    }
+  }
+  &.top-shadow {
+    .top {
+      z-index: 3;
+      @include box-shadow(0px, 0px, 6px, rgba(0, 0, 0, 0.2));
+    }
+  }
+  &.bottom-shadow {
+    .top {
+      z-index: 2
+    }
+    .bottom {
+      z-index: 0;
+      @include box-shadow(0px, 0px, 6px, rgba(0, 0, 0, 0.2));
+    }
+  }
+
+  .badge-list {
+    text-align: right;
+  }
+  .account-box,
+  .badge-list {
+    z-index: 2;
+    float: right;
+  }
+  .mobile-box {
+    display: none;
+    @include clearfix();
+  }
+}
+
+/* Hiding sticky wrapper when it's not needed */
+@media screen and (max-width: 992px ) {
+  header.bottom-logo.fixed-header.fixed-top {
+    > .sticky-wrapper {
+      display: none;
+    }
+  }
+}
+
+/** Fixed Header width admin bar  */
+
+.admin-bar {
+  .header {
+    &.stuck {
+      top: 32px;
+    }
+    .top,
+    .bottom {
+      &.stuck {
+        top: 32px;
+      }
+    }
+  }
+  @media screen and (max-width: 782px) {
+    .header {
+      &.stuck {
+        top: 42px;
+      }
+      .top,
+      .bottom {
+        &.stuck {
+          top: 42px;
+        }
+      }
+    }
+  }
+}
